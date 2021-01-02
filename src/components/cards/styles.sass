@@ -1,0 +1,40 @@
+@import './../../preset-styles/_variables.sass'
+
+.card
+  max-width: 18.75rem
+  display: flex
+  flex-direction: column
+  padding: 3rem
+  border-radius: 1rem
+  margin-left: 1rem
+  margin-right: 1rem
+  margin-bottom: 3rem
+
+  .card__title
+    margin-top: 0
+    color: $darkBlue
+
+  .card__description
+    margin-bottom: 3rem
+    color: $grayBlue
+    font-weight: $weightBold
+
+  .card__icon
+    align-self: flex-end
+
+.card--color-cyan
+  box-shadow: 0 0 1rem .1rem lightgray, 0 -0.4rem 0 0 $cyan
+
+.card--color-red
+  box-shadow: 0 0 1rem .1rem lightgray, 0 -0.4rem 0 0 $red
+
+.card--color-orange
+  box-shadow: 0 0 1rem .1rem lightgray, 0 -0.4rem 0 0 $orange
+
+.card--color-blue
+  box-shadow: 0 0 1rem .1rem lightgray, 0 -0.4rem 0 0 $blue
+
+@media (min-width: 450px)
+  .card
+    margin-left: auto
+    margin-right: auto
